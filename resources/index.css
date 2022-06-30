@@ -113,7 +113,6 @@ img {
     justify-content: center;
     color: #000000;
     top: 180px;
-
 }
 
 #a {
@@ -122,6 +121,7 @@ img {
     margin: 44px;
     margin-top: 220px;
     border: solid 1px #000000;
+    max-width: 210px;
 }
 
 #b {
@@ -129,6 +129,7 @@ img {
     padding: 5px;
     margin: 45px;
     border: solid 1px #000000;
+    max-height: 300px;
 }
 
 
@@ -137,7 +138,8 @@ img {
     padding: 5px;
     margin: 45px;
     border: solid 1px #000000;
-
+    max-height: 300px;
+    max-width: 210px;
 }
 
 #d {
@@ -146,6 +148,7 @@ img {
     margin: 44px;
     margin-top: 220px;
     border: solid 1px #000000;
+    max-width: 210px;
 }
 
 .photo
@@ -159,7 +162,7 @@ img {
 p {
     font-size: 20px;
     font-weight: bold;
-    width: 50px;
+    text-align: center;
 }
 
 .quote {
