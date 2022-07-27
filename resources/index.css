@@ -1,12 +1,11 @@
 header {
     position: sticky;
     width: 100%;
-    border-bottom: solid 2px #ffffff;
     color: #ffffff;
     top:0;
     left: 0;
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: rgba(0, 0, 0, 0.61);
     backdrop-filter: blur(5px);
     z-index: 100;
@@ -17,31 +16,7 @@ h1 {
     padding-left: 15px;
 }
 
-header 
-div {
-    float: right;
-}
-
-header
-a {
-    padding-right: 50px;
-    font-size: 20px;
-}
-
-a:link, a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-header
-img {
-    width: 60px;
-    height: 60px;
-    padding-top: 10px;
-    padding-left: 10px;
-} 
-
-.point {
+.nav {
     color: rgb(255, 255, 255);
     position:absolute;
     justify-content: center;
@@ -50,180 +25,220 @@ img {
     text-align: right;
 }
 
-.club {
-    color: #FFFFFF;
-    text-align: center;
-    padding-top: 100px;
-    line-height: 70px;
+header
+a {
+    padding-right: 50px;
+    font-size: 20px;
+    
 }
 
-
-.club
-p {
-    font-size: 25px;
+h4{
+    color: white;
+    text-decoration: none;
+    transition-property: color ;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+    transition-delay: 100ms;
 }
 
-.events {
-    position: relative;
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    transition-property: color ;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+    transition-delay: 100ms;
+}
+
+header a:hover,
+header a.active {
+  color: #f36d00;
+}
+
+.progect h4:hover,
+.progect h4.active {
+  color: #f36d00;
+}
+
+.about {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 71px;
+    padding-top: 100px;
+    padding-right: 50px;
 }
 
-.info {
-    color: rgb(0, 0, 0);
-    backdrop-filter: blur(5px);
-    border-bottom: solid 2px #000000;
-    position: absolute;
-    z-index: 90;
-    justify-content: center;
-    width: 100%;
-    height: 150px;
-    text-align: center;
-    top: 0;
-    line-height: 20px;
-}
-
-.info 
-h3 {
-    font-size: 40px;
-    text-shadow: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.info
-p {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.events
+.about
 img {
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
+    height: auto;
+    width: 500px;
+    border-radius: 15%;
+    
+}
+
+
+.text
+p {
+    width: 80%;
+    font-size: 23px;
+    margin-left: 70px;
+    background-color: rgba(0, 0, 0, 0.171);
+    line-height: 40px;
+    border-radius: 10%;
+}
+
+.text
+h3 {
+    padding-top: 50px;
+    margin-left: 300px;
+    font-size: 37px;
+    padding-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.363);
+    width: 40%;
+    text-align: center;
+    border-radius: 10%;
+    padding: 25px;
 }
 
 .photo {
     display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    justify-content: center;
-    color: #000000;
-    top: 180px;
+    float: right;
 }
 
-#a {
-    background-image: url(./imagese/dan-cristian-padure-I_csqCWC_3o-unsplash.jpg);
-    padding: 5px;
-    margin: 44px;
-    margin-top: 220px;
-    border: solid 1px #000000;
-    max-width: 210px;
+.progect {
+    margin-top: 100px;
 }
 
-#b {
-    background-image: url(./imagese/dan-cristian-padure-I_csqCWC_3o-unsplash.jpg);
-    padding: 5px;
-    margin: 45px;
-    border: solid 1px #000000;
-    max-height: 300px;
-}
-
-
-#c {
-    background-image: url(./imagese/dan-cristian-padure-I_csqCWC_3o-unsplash.jpg);
-    padding: 5px;
-    margin: 45px;
-    border: solid 1px #000000;
-    max-height: 300px;
-    max-width: 210px;
-}
-
-#d {
-    background-image: url(./imagese/dan-cristian-padure-I_csqCWC_3o-unsplash.jpg);
-    padding: 5px;
-    margin: 44px;
-    margin-top: 220px;
-    border: solid 1px #000000;
-    max-width: 210px;
-}
-
-.photo
-img {
-    height: 200px;
-    width: 200px; 
-    margin: 5px;
-}
-
-.photo
-p {
-    font-size: 20px;
-    font-weight: bold;
+.progect
+h3 {
+    font-size: 37px;
+    padding-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.363);
+    width: 30%;
     text-align: center;
-}
-
-.quote {
-    color: #FFFFFF;
-    text-align: center;
-    padding-top: 200px;
-    font-size: 25px;
-    width: 80%;
-    margin:auto;
-}
-
-.deal {
-    background-color: rgba(0, 0, 0, 0.61);
-    backdrop-filter: blur(5px);
-    color: #FFFFFF;
-    text-align: center;
+    border-radius: 10%;
+    margin-left: 16%;
+    margin-bottom: 70px;
     margin-top: 200px;
-    line-height: 70px;
-    border-bottom: solid 1px #ffffff;
-    border-top: solid 1px #ffffff;
+    padding: 25px;
 }
 
-.deal
-h3 {
-    margin-top: 0;
-    font-size: 40px;
+
+
+.progect
+h4 {
+    font-size: 25px;
+    margin-left: 70px;
+    line-height: 40px;
+    padding-left: 10px;
+    margin-left: 18%;
+    line-height: 20px;
 }
 
-.deal
-p {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+summary {
+    list-style-type: none;
+    
 }
 
-.deal
+details {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+@keyframes details-show {
+    from {
+      opacity:0;
+      transform: var(--details-translate, translateY(-0.5em));
+    }
+}
+  
+details[open] > *:not(summary) {
+animation: details-show 150ms ease-in-out;
+}
+
+details[close] > *:not(summary) {
+    animation: details-show 150ms ease-in-out;
+    }
+
+.prog
 img {
-    width: 100px;
-    margin-top: 30px;
-    margin-bottom: 0;
+    width: 1000px;
+    margin-left: 340px;
 }
 
-footer {
-    text-align: left;
-    color: rgb(255, 255, 255);
-    margin-left: 20px;
-    border-top: solid 1px #ffffff;
-    background-color: rgba(0, 0, 0, 0.61);
-    backdrop-filter: blur(5px);
-    margin-top: 150px;
-    margin-left: 0;
-    margin-bottom: 0;
-}
-
-footer
+.skills 
 h3 {
+    margin-top: 200px;
     text-align: center;
-    font-size: 30px;  
+    font-size: 37px;
+    background-color: rgba(0, 0, 0, 0.363);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
+
+.list
+a {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.list a:hover,
+.list a.active {
+  color: #f36d00;
+}
+
+.list
+img {
+    display: flex;
+    width: 30px;
+    justify-content: center;
+}
+
+#css {
+    width: 35px;
+    margin-bottom: 0px;
+}
+
+#html {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+#js {
+    margin-left: 26px;
+    margin-bottom: 5px;
+}
+
+#git {
+    margin-bottom: 5px;
+}
+
+#gh {
+    margin-left: 16px;
+    margin-bottom: 5px;
+}
+
+#node {
+    margin-left: 6px;
+    margin-bottom: 5px;
 }
 
 body {
-    background-image: url(./imagese/olena-sergienko-Cq5NaI0yKBE-unsplash.jpg);
+    background-image: url(./imagese/ogon-koster-ugli-plamia.jpg);
     background-attachment: fixed;
-    color:#ffffff;
 }
+
+p, 
+h1,
+h3,
+ul,
+a,
+h4 {
+    color: aliceblue;
+} 
