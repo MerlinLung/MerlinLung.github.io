@@ -272,7 +272,8 @@ h4 {
 
     header {
         height: 70px;
-        width: 113%
+        width: 113%;
+        margin-left: -10px;
     }
 
     header
@@ -354,6 +355,7 @@ h4 {
 
     footer {
         width: 113%;
+        margin-left: -10px;
     }
 
 }
