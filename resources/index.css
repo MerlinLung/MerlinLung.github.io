@@ -304,6 +304,19 @@ h4 {
         border-radius: 50%;
     }
 
+    .progect
+    h3 {
+        font-size: 37px;
+        background-color: rgba(0, 0, 0, 0.363);
+        width: 150px;
+        text-align: center;
+        border-radius: 10%;
+        margin-left: 16%;
+        margin-bottom: 70px;
+        margin-top: 200px;
+        padding: 25px;
+    }
+
     .text
     h3 {
         padding-top: 40px;
