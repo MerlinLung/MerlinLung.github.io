@@ -13,7 +13,7 @@ header {
 
 header
 h1 {
-    padding-left: 15px;
+    margin-left: 15px;
 }
 
 .nav {
@@ -156,7 +156,7 @@ animation: details-show 150ms ease-in-out;
 
 details[close] > *:not(summary) {
     animation: details-show 150ms ease-in-out;
-    }
+}
 
 .prog
 img {
@@ -235,7 +235,7 @@ footer {
     bottom:0;
     background-color: rgba(0, 0, 0, 0.61);
     backdrop-filter: blur(5px);
-    padding-bottom: 10px;
+    padding-bottom: 1px;
 }
 
 footer
@@ -243,6 +243,7 @@ h3 {
     text-align: center;
     font-size: 37px;
     padding-top: 10px;
+    margin-bottom: 5px;
 }
 
 footer
@@ -266,3 +267,124 @@ a,
 h4 {
     color: aliceblue;
 } 
+
+@media only screen and (max-width: 830px) {
+
+    header
+    h1 {
+        margin-left: 1px;
+        font-size: 25px;
+    }
+
+    header
+    a {
+        padding-right: 5px;
+        font-size: 15px;
+        
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        padding-top: 100px;
+        padding-left: 100px;
+    }
+
+    .about
+    img {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+
+    .text
+    h3 {
+        padding-top: 40px;
+        margin-left: 30px;
+        font-size: 25px;
+        padding-bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.363);
+        width: 50%;
+        text-align: center;
+        border-radius: 10%;
+        padding: 25px;
+    }
+
+    .text
+    p {
+        width: 80%;
+        font-size: 20px;
+        margin-left: 30px;
+        background-color: rgba(0, 0, 0, 0.171);
+        line-height: 35px;
+        border-radius: 10%;
+    }
+
+    .prog
+    img {
+        width: 500px;
+        margin-left: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 830px ) and (max-width: 1200px) {
+    
+    header
+    h1 {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+
+    header
+    a {
+        padding-right: 15px;
+        font-size: 22px;
+        
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        padding-top: 80px;
+        padding-left: 200px;
+    }
+
+    .about
+    img {
+        height: 500px;
+        width: 500px;
+        border-radius: 15%;
+    }
+
+    .text
+    h3 {
+        padding-top: 40px;
+        margin-left: 30px;
+        font-size: 30px;
+        padding-bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.363);
+        width: 50%;
+        text-align: center;
+        border-radius: 10%;
+        padding: 25px;
+    }
+
+    .text
+    p {
+        width: 80%;
+        font-size: 20px;
+        margin-left: 30px;
+        background-color: rgba(0, 0, 0, 0.171);
+        line-height: 35px;
+        border-radius: 10%;
+    }
+
+    .progect {
+        padding-left: 200px;
+    }
+
+    .prog
+    img {
+        width: 700px;
+        margin-left: -30px;
+    }
+}
