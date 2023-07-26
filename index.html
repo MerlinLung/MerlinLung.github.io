@@ -1,73 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resources\index.css">
-    <link rel="icon" href="./resources/imagese/free-icon-bonfire-1839028.ico" sizes="any">
-    <title>Portfolio</title>
-</head>
-<body>
-    <header>
-        <h1>Elizaveta Konovalova</h1>
-        <div class="nav">
-            <a href="#about">About Me</a>
-            <a href="#progect">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contacts</a>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="icon" href="photo/calculator.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Calculator</h1>
+            <ul>
+                <a href="#about"><li>About</li></a>
+                <a href="#calculator"><li>calculator</li></a>
+                <a href="#contact"><li>Contacts</li></a>
+            </ul>
+        </header>
+
+        <div class="about" id="about">
+            <h3>Welcome to my test task</h3>
+            <p>do your calculations here</p>
         </div>
-    </header>
-    <div class="about" id="about">
-        <div class="text">
-            <h3>About Me</h3>
-            <p>Hello, my name is Elizaveta, I am a beginner front-end programmer. I really like working with design and animation, I think that aesthetics is a very important factor in our life.
-                I am a student of Belarusian State University, specializing in applied computer science.
-            </p>
-            <br>
-            <p> You can see my projects below. In my spare time I play music, read books, both fiction and scientific books on psychology. I believe that psychology is an integral part of the site, how it will be more convenient for the user
-                    see the site where he wants to click first. I think I can apply my knowledge of psychology well in this. I want to continue to develop in the field of front-end and develop skills.</p>
+
+        <div class="container">
+            <div class="calculator" id="calculator">
+                <form>
+                    <div class="display">
+                        <input type="text" name="display" id="display">
+                    </div>
+                    <div>
+                        <input type="button" value="C" class="c" onclick="display.value = '' ">
+                        <input type="button" value="←" onclick="display.value =  display.value.toString().slice(0, -1)">
+                        <input type="button" value="." onclick="display.value += '.' ">
+                        <input type="button" value="/" onclick="display.value += '/' ">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="display.value += '7' ">
+                        <input type="button" value="8" onclick="display.value += '8' ">
+                        <input type="button" value="9" onclick="display.value += '9' ">
+                        <input type="button" value="*" onclick="myFunction('*')">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="display.value += '4' ">
+                        <input type="button" value="5" onclick="display.value += '5' ">
+                        <input type="button" value="6" onclick="display.value += '6' ">
+                        <input type="button" value="-" onclick="display.value += '-' ">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="display.value += '1' ">
+                        <input type="button" value="2" onclick="display.value += '2' ">
+                        <input type="button" value="3" onclick="display.value += '3' ">
+                        <input type="button" value="+" onclick="display.value += '+' ">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick="display.value += '00' ">
+                        <input type="button" value="0" onclick="display.value += '0' ">
+                        <input type="button" value="=" onclick="display.value = eval(display.value)"   class="equal">
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class='photo'>
-            <img src="./resources/imagese/small.jpg" href="Me">
-        </div>
-    </div>
-    <div class='progect' id="progect">
-        <h3>Projects</h3>
-        <details class="prog">
-            <summary>
-                <h4>HTML Table Reference</h4>
-            </summary>
-            <img src="./resources/imagese/first.jpg">
-        </details>
-        <details class="prog">
-            <summary>
-                <h4>My Life Company</h4>
-            </summary>
-            <img src="./resources/imagese/my life.jpg">
-        </details>
-        <details class="prog">
-            <summary>
-                <h4>Ufology club</h4>
-            </summary>
-            <img src="./resources/imagese/ufology.jpg">
-        </details>
-    </div>
-    <div class = "skills" id="skills">
-        <h3>Skills</h3>
-        <div class="list">
-            <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><img src="./resources/imagese/icons8-html-5-50.ico" id="html"><br> HTML</a>
-            <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><img src="./resources/imagese/icons8-css3-100.ico" id="css"><br>CSS</a>
-            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="./resources/imagese/icons8-javascript-50.ico" id="js"><br>JavaScript</a>
-            <a href="https://en.wikipedia.org/wiki/Git" target="_blank"><img src="./resources/imagese/icons8-git-50.ico" id="git"><br>Git</a>
-            <a href="https://en.wikipedia.org/wiki/GitHub" target="_blank"><img src="./resources/imagese/icons8-github-50.ico" id="gh"><br>GitHub</a>
-            <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank"><img src="./resources/imagese/big.ico" id="node"><br>Node</a>
-        </div>
-    </div>
-    <footer>
-        <h3 id="contact">Contacts</h3>
-        <p>Email: Merlin.lung@gmail.com</p>
-        <p>Phone: +375(29) 802-**-**</p>
-    </footer>
-</body>
+
+        <footer>
+            <div class="contact" id="contact">
+                <h3>Contacts </h3>
+                <p>Elizaceta Konovalova</p>
+                <p>Email: Merlin.lung@gmail.com</p>
+                <p>phone: +375296293429</p>
+            </div>
+        </footer>
+
+        <script>
+            function myFunction(x) {
+                const element = document.getElementById('display')
+                element.value += x;
+            }
+        </script>
+    </body>
 </html>
