@@ -34,7 +34,7 @@
                         <input type="button" value="C" class="c" onclick="display.value = '' ">
                         <input type="button" value="←" onclick="display.value =  display.value.toString().slice(0, -1)">
                         <input type="button" value="." onclick="display.value += '.' ">
-                        <input type="button" value="/" onclick="display.value += '/' ">
+                        <input type="button" value="/" onclick="myFunction('/')">
                     </div>
                     <div>
                         <input type="button" value="7" onclick="display.value += '7' ">
@@ -46,13 +46,13 @@
                         <input type="button" value="4" onclick="display.value += '4' ">
                         <input type="button" value="5" onclick="display.value += '5' ">
                         <input type="button" value="6" onclick="display.value += '6' ">
-                        <input type="button" value="-" onclick="display.value += '-' ">
+                        <input type="button" value="-" onclick="myFunction('-')">
                     </div>
                     <div>
                         <input type="button" value="1" onclick="display.value += '1' ">
                         <input type="button" value="2" onclick="display.value += '2' ">
                         <input type="button" value="3" onclick="display.value += '3' ">
-                        <input type="button" value="+" onclick="display.value += '+' ">
+                        <input type="button" value="+" onclick="myFunction('+')">
                     </div>
                     <div>
                         <input type="button" value="00" onclick="display.value += '00' ">
@@ -74,9 +74,20 @@
 
         <script>
             function myFunction(x) {
-                const element = document.getElementById('display')
+                const element = document.getElementById('display');
+                const currentValue = element.value;
+                const lastChar = currentValue.slice(-1); // Get the last character of the current value
+
+                // Check if the current value is an operator (+, -, *, /) and the last character is also an operator
+                if (['+', '-', '*', '/'].includes(x) && ['+', '-', '*', '/'].includes(lastChar)) {
+                    // If the last character is an operator, do not append the new operator (x)
+                    return;
+                }
+
+                // If the last character is not an operator, append the new value (x) to the existing value
                 element.value += x;
             }
+
         </script>
     </body>
 </html>
